@@ -18,7 +18,7 @@ before_install:
 - sudo python3 -m pip install -U pip
 - python3 -m pip install py2app
 - nvm use v0.10.48
-- npm install -g appdmg
+# - npm install -g appdmg
 
 install:
 - wget https://github.com/namuan/anchor-app/archive/${BUILD_VERSION}.tar.gz -O ./anchor.tar.gz
@@ -31,8 +31,8 @@ script:
 - rm -rf build
 - rm -rf dist
 - python3 setup.py py2app
-- appdmg dmg.json dist/Anchor-${BUILD_VERSION}-macOS.dmg
-- mv dist/Anchor-${BUILD_VERSION}-macOS.dmg "${TRAVIS_BUILD_DIR}"
+# - appdmg dmg.json dist/Anchor-${BUILD_VERSION}-macOS.dmg
+# - mv dist/Anchor-${BUILD_VERSION}-macOS.dmg "${TRAVIS_BUILD_DIR}"
 - echo "Done!"
 
 notifications:
