@@ -17,8 +17,9 @@ before_install:
 - brew install python3
 - sudo python3 -m pip install -U pip
 - python3 -m pip install py2app
-- nvm use v0.10.48
-# - npm install -g appdmg
+- nvm install v8.9.1
+- nvm use v8.9.1
+- npm install -g appdmg
 
 install:
 - wget https://github.com/namuan/anchor-app/archive/${BUILD_VERSION}.tar.gz -O ./anchor.tar.gz
