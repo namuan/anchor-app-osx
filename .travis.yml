@@ -32,8 +32,8 @@ script:
 - rm -rf build
 - rm -rf dist
 - python3 setup.py py2app
-# - appdmg dmg.json dist/Anchor-${BUILD_VERSION}-macOS.dmg
-# - mv dist/Anchor-${BUILD_VERSION}-macOS.dmg "${TRAVIS_BUILD_DIR}"
+- appdmg dmg.json dist/Anchor-${BUILD_VERSION}-macOS.dmg
+- mv dist/Anchor-${BUILD_VERSION}-macOS.dmg "${TRAVIS_BUILD_DIR}"
 - echo "Done!"
 
 notifications:
